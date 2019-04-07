@@ -10,11 +10,11 @@ namespace LojasAlternativas.QuickBuyBeta.Domain.Entity
         public int Id { get; set; }
         public DateTime DataVenda { get; set; }
         public int UsuarioId { get; set; }
-        public ICollection<Produto> Produtos { get; set; }
+        public virtual ICollection<ItemVenda> Itens{ get; set; }
 
         public bool Validar()
         {
-            if (!Produtos.Any())
+            if (!Itens.Any())
                 return false;
 
             return true;

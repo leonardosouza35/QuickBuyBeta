@@ -12,7 +12,7 @@ namespace LojasAlternativas.QuickBuyBeta.Domain.Entity
         public string Nome { get; set; }
         public string SobreNome { get; set; }
 
-        public ICollection<Venda> Vendas { get; set; }
+        public virtual ICollection<Venda> Vendas { get; set; }
 
         public bool Validar()
         {

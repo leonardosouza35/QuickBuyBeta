@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LojasAlternativas.QuickBuyBeta.Domain.Interfaces.Repositorio
+namespace LojasAlternativas.QuickBuy.Application.Interfaces
 {
-    public interface IRepositoryBase<TEntity> : IDisposable where TEntity: class
+    public interface IAppServiceBase<TEntity> : IDisposable where TEntity : class
     {
         void Adicionar(TEntity entity);
         TEntity ObterPorId(int id);
